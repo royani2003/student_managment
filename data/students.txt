@@ -1,0 +1,6 @@
+101, Rahul, Computer Science, 1, 78, 82, 69
+102, Priya, Computer Science, 1, 91, 87, 94
+103, Amit, Mathematics, 1, 65, 71, 68
+104, Sneha, Physics, 1, 55, 48, 60
+105, Karan, Mathematics, 1, 35, 42, 38
+106, Divya, Physics, 1, 88, 90, 85
