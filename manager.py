@@ -19,9 +19,8 @@ class StudentManager:
     def __init__(self):
         self.students = []  # list of Student objects currently in memory
 
-    # ------------------------------------------------------------------
     # In-memory record management
-    # ------------------------------------------------------------------
+    
     def add_student(self, student):
         """
         Add a new Student object to the manager.
@@ -62,9 +61,8 @@ class StudentManager:
         for student in self.students:
             student.display_student()
 
-    # ------------------------------------------------------------------
     # File persistence - delegated to file_handler.py
-    # ------------------------------------------------------------------
+    
     def load_from_file(self, filepath, file_format):
         """
         Load student records from a file and replace the current in-memory
