@@ -42,9 +42,8 @@ class Student:
         # Store marks as a list of three integers.
         self.marks = [int(m) for m in marks]
 
-    # ------------------------------------------------------------------
     # Core behaviour
-    # ------------------------------------------------------------------
+    
     def calculate_total(self):
         """Return the total marks obtained across all three subjects."""
         return sum(self.marks)
@@ -91,9 +90,8 @@ class Student:
         print(f"Result       : {self.get_result()}")
         print("-" * 45)
 
-    # ------------------------------------------------------------------
     # Conversion helpers - used by file_handler.py when saving records
-    # ------------------------------------------------------------------
+    
     def to_txt_line(self):
         """Return this student as a single comma-separated text line."""
         return (f"{self.student_id}, {self.name}, {self.department}, "
@@ -125,9 +123,8 @@ class Student:
             },
         }
 
-    # ------------------------------------------------------------------
     # Alternative constructors - used by file_handler.py when loading
-    # ------------------------------------------------------------------
+   
     @classmethod
     def from_txt_line(cls, line):
         """Build a Student from a comma-separated text line."""
