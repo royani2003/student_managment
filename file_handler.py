@@ -18,9 +18,8 @@ CSV_FIELDNAMES = ["Student_ID", "Name", "Department", "Semester",
                    "Subject1", "Subject2", "Subject3"]
 
 
-# ---------------------------------------------------------------------
 # TXT file handling
-# ---------------------------------------------------------------------
+
 def read_txt(filepath):
     """
     Read student records from a plain text file.
@@ -71,9 +70,8 @@ def preview_txt(filepath, num_lines=3):
             print("   " + line.rstrip())
 
 
-# ---------------------------------------------------------------------
 # CSV file handling  (Do NOT use Pandas here - only the csv module)
-# ---------------------------------------------------------------------
+
 def read_csv(filepath):
     """
     Read student records from a CSV file (with a header row).
@@ -99,9 +97,8 @@ def write_csv(filepath, students):
             writer.writerow(student.to_csv_row())
 
 
-# ---------------------------------------------------------------------
 # JSON file handling
-# ---------------------------------------------------------------------
+
 def read_json(filepath):
     """
     Read student records from a JSON file.
@@ -128,9 +125,8 @@ def write_json(filepath, students):
         json.dump(data, f, indent=4)
 
 
-# ---------------------------------------------------------------------
 # Format dispatch helpers - used by StudentManager
-# ---------------------------------------------------------------------
+
 READERS = {
     "txt": read_txt,
     "csv": read_csv,
